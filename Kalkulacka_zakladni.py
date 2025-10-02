@@ -1,16 +1,20 @@
 a=int(input("Zadej hodnotu A: "))
-c=str(input("Zadej matematickou operaci(+, -, *, /): "))
+c=str(input("Zadej matematickou operaci(+, -, *, /, **): "))
 b=int(input("Zadej hodnotu B: "))
-if c=="+":
+if c=="+":                          #sčítání
     print("Výsledek: ", a+b)
-elif c=="-":
+elif c=="-":                        #odčítání
     print("Výsledek: ", a-b)
-elif c=="/":
+elif c=="/":                        #dělení
     if b != 0:
         print("Výsledek: ", a/b)
     else:
         print("Nelze dělit nulou!")
-elif c=="*":
+elif c=="*":                        #násobení
     print("Výsledek: ", a*b)
+elif c=="**":                       #mocnina
+    print("Výsledek:", a**b)
+elif c=="//":                       #odmocnina
+    print("Výsledek:", a**(1.0/b))
 else:
     print("Výsledek nejde vypočítat")
