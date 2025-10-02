@@ -7,7 +7,7 @@ elif c=="-":                        #odčítání
     print("Výsledek: ", a-b)
 elif c=="/":                        #dělení
     if b != 0:
-        print("Výsledek: ", a/b)
+        print("Výsledek: ", a/b)    #kontrola dělení nulou
     else:
         print("Nelze dělit nulou!")
 elif c=="*":                        #násobení
