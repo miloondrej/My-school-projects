@@ -9,4 +9,5 @@ elif vek >=18 and vek >=21: #porovnání věku v rozsahu let
     print("Může do parlamentu")
 elif vek >=18:              #porovnání věku vůči minimální hodnotě
     print("Může volit")
-    
+else:
+    print("Nemůže volit")   #věk nižší než 18 let
