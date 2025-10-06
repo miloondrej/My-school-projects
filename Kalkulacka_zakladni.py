@@ -1,5 +1,5 @@
 a=int(input("Zadej hodnotu A: "))
-c=str(input("Zadej matematickou operaci(+, -, *, /, **): "))
+c=str(input("Zadej matematickou operaci(+, -, *, /, **, //): "))
 b=int(input("Zadej hodnotu B: "))
 if c=="+":                          #sčítání
     print("Výsledek: ", a+b)
@@ -18,3 +18,4 @@ elif c=="//":                       #odmocnina
     print("Výsledek:", a**(1.0/b))
 else:
     print("Výsledek nejde vypočítat")
+    
