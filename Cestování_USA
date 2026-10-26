@@ -1,0 +1,35 @@
+# 1. ČÁST: KALKULAČKA (Přepočet peněz)
+print("=== VÍTEJ V CESTOVATELSKÉM PLÁNOVAČI PRO USA ===")
+
+koruny = int(input("Kolik máš naspořeno Kč na kapesné? "))
+operace = str(input("Chceš peníze převést na Dolary ($) nebo Eura (€)? Napiš D nebo E: "))
+
+if operace == "D":
+    vysledek = koruny / 23  # Přibližný kurz dolaru
+    print("Na cestu budeš mít v přepočtu:", vysledek, "dolarů.")
+elif operace == "E":
+    vysledek = koruny / 25  # Přibližný kurz eura
+    print("Na cestu budeš mít v přepočtu:", vysledek, "eur.")
+else:
+    print("Tuto měnu neznám, bereme to tak, že máš 0 dolarů.")
+    vysledek = 0
+
+print("--------------------------------------------------")
+
+# 2. ČÁST: PODMÍNKY (Co může v Americe dělat podle věku)
+vek = int(input("Kolik ti bude let v době odjezdu? "))
+
+if vek >= 25:
+    print("Skvělé! V USA si můžeš bez problému půjčit jakékoliv auto.")
+    print("Můžeš legálně pít alkohol.")
+    print("Můžeš cestovat úplně sám.")
+elif vek >= 21:
+    print("Můžeš legálně pít alkohol a slavit v klubech.")
+    print("Půjčení auta ale bude drahé kvůli mladému věku.")
+elif vek >= 18:
+    print("Jsi sice dospělý, ale v USA ti ještě neprodají ani pivo.")
+    print("Můžeš ale legálně pracovat na Work and Travel.")
+else:
+    print("Jsi ještě nezletilý. Do USA můžeš jet pouze s doprovodem rodičů.")
+
+print("Šťastnou cestu!")
